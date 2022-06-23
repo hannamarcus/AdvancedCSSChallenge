@@ -68,8 +68,17 @@
       padding :10px;
   }
   
-  /*Add employees photo*/
+  /*Add recent photo*/
 
+  .headshot {
+    height: 75px;
+    width: 75px;
+    margin: 20px 50px;
+    background-image: url("./Images/Headshot.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
   
 /*Section styles*/
 .about{
@@ -100,17 +109,10 @@
     flex-wrap: wrap;
     align-items: center;
   }
-
-.box-info-baseline{
-    flex :2 20%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
   
 .vl-border1 {
     border-right: 3px solid #39a6b2;
-    height: 150px;
+    height: 200px;
     flex: 1.5%;
   }
   
@@ -167,6 +169,12 @@
   border: solid 1px var(--primary-color);  
 }
 
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  position: relative;
+  }
+
 .thumbnail { 
   top:-50px; 
   left:-35px; 
@@ -184,6 +192,8 @@
   
   }
 
+  /*Project caption*/
+
 figcaption{
   position: absolute;
   margin-left: 5px;
@@ -195,14 +205,7 @@ figcaption{
   border: solid 1px var(--primary-color);
   background-color: rgb(229, 232, 238);
 }
-  
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  position: relative;
-  }
+
   
 /*Contact info section style*/
 .vl-border3 {
@@ -273,9 +276,9 @@ figcaption{
       height: 350px;     
     }
 
-  .vl-border2{
+    .vl-border2{
     height: 280px;     
-  }  
+    }  
     .container{
       width: 100%;
     }
@@ -283,13 +286,13 @@ figcaption{
       width: 100%;
       justify-content: left;
       flex-direction: column;      
-  }
+    }
     
     .contact-info ul li a {
         font-size: 18px;
         line-height: 3;  
         font-weight: bold;
-  }
+    }
 
     .vl-border3{
         height: 180px;
