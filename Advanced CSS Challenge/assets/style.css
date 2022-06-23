@@ -25,7 +25,7 @@
       background-color: rgb(229, 232, 238);
     }
   
-  /* apply styles to <header> */
+  /* styles for <header> */
   header {
       padding: 20px 35px;
       background-color: #0a2527;
@@ -69,25 +69,9 @@
   }
   
   /*Add employees photo*/
-.image2 {
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    border: 3px var(--primary-color) solid;
-    height:150px;
-    width: 150px;
-  }
-  
-.hero h2 {
-    font-style: arial;
-    font-size: 20px;
-    color: var(--primary-color);
-    margin-top: 300px;
-    background-color:rgb(229, 232, 238);
-  }
 
   
-/*Work section style*/
+/*Section styles*/
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -110,26 +94,33 @@
     width: 50%;
   }
   
-.step-info{
+.box-info{
     flex :2 20%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
+
+.box-info-baseline{
+    flex :2 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
   
 .vl-border1 {
     border-right: 3px solid #39a6b2;
     height: 150px;
-    flex: 2 1%;
+    flex: 1.5%;
   }
   
-.step-text {
+.box-text {
     flex: 25;
   }
   
-.step-text p {
+.box-text p {
     color: var(--primary-color);
-    font-size: 15px;
+    font-size: 18px;
     text-align: left;
     line-height: 1.3;
     margin-left: 30px;
@@ -138,8 +129,8 @@
   
 .vl-border2{
     border-right: 3px solid #39a6b2;
-    height: 450px;
-    flex: 2 5%;  
+    height: 300px;
+    flex: 2 4%;  
     
   }
 
@@ -159,26 +150,31 @@
 .gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 10vw);
     grid-gap: 15px;
-    margin-left: 30px;     
+    margin-left: 30px;  
+    align-items: baseline;
     
   }
   
 .gallery__item{
   position: relative;
+
 }
 .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: solid 1px var(--primary-color);  
- }
+}
+
+.img:hover {
+    transform: scale(1.3);
+    }
 
 figcaption{
   position: absolute;
   margin-left: 5px;
-  margin-top: -20%;
+  margin-top: -10%;
   font-size: 12px;
   font-style: italic;
   font-weight: bold;
@@ -195,11 +191,10 @@ figcaption{
   position: relative;
   }
   
-/*About section style*/
+/*Contact info section style*/
 .vl-border3 {
     border-right: 3px solid #39a6b2;
     height: 100px;
-    flex: 2 5%;
   }
   
 .contact-info {
@@ -210,7 +205,6 @@ figcaption{
   .contact-info ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: left;
     list-style: none;
     margin-left: 15px;
@@ -225,6 +219,15 @@ figcaption{
       border-bottom: 3px solid;
       padding-bottom: 2px;
     }
+
+/* headshot*/
+.headshot {
+  height: 100px;
+  width: 20%;
+  margin-bottom: 25px;
+  url("./Images/Headshot.jpeg");
+  position: absolute;
+}
     
  /*Code for media query*/
 
@@ -251,20 +254,7 @@ figcaption{
       font-size: 16px;
       font-weight: bold;
     }
-
-    .hero{
-      background-size: cover;
-    }
-
-    .image2{
-      height: 100px;
-      width: 100px;
-    }
-    .hero h2 {      
-      font-size: 10px;
-      margin-top: 350px;
-      }
-
+    
     .step-text p{
         width: 85%;
       }
