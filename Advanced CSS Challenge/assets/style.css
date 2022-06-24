@@ -71,8 +71,8 @@ section {
 /*Add recent photo*/
 
 .headshot {
-  height: 75px;
-  width: 75px;
+  height: 150px;
+  width: 150px;
   margin: 20px 50px;
   background-image: url("./Images/Headshot.jpeg");
   background-size: cover;
@@ -90,8 +90,9 @@ section {
   align-items: center;
 }
 
-.flex-row {
+.title-sidebox {
   display: flex;
+  flex-direction: row;
   justify-content: left;
 }
 
@@ -110,7 +111,7 @@ section {
   align-items: center;
 }
 
-.vl-border1 {
+.border1 {
   border-right: 3px solid #39a6b2;
   height: 200px;
   flex: 1.5%;
@@ -125,12 +126,13 @@ section {
   color: var(--primary-color);
   font-size: 18px;
   text-align: left;
-  line-height: 1.3;
-  margin-left: 30px;
+  line-height: 1.5;
+  margin-left: 200px;
   width: 100%;
+  padding-top: 25px;
 }
 
-.vl-border2{
+.border2{
   border-right: 3px solid #39a6b2;
   height: 300px;
   flex: 2 4%;  
@@ -210,10 +212,10 @@ background-color: rgb(229, 232, 238);
 
 
 /*Contact info section style*/
-.vl-border3 {
+.border3 {
   border-right: 3px solid #39a6b2;
   height: 100px;
-  flex: 1%;
+  flex: 2 2;
   align-items: center;
 }
 
@@ -241,73 +243,3 @@ flex: 150;
   }
   
 /*Code for media query*/
-
-@media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 10px;
-    justify-content: center;
-  }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
-    line-height: 1.5;
-  }
-
-  header nav ul li a {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .step-text p{
-      width: 85%;
-    }
-
-  .section-title {
-    width: 100%;
-    text-align: right;
-    font-weight: bold;
-  }
-
-  .vl-border1 {      
-    height: 350px;     
-  }
-
-  .vl-border2{
-  height: 280px;     
-  }  
-
-  .vl-border3{
-    height: 180px;
-}
-
-  .container{
-    width: 100%;
-  }
-  
-  .contact-info ul {     
-    width: 100%;
-    justify-content: left;
-    flex-direction: column;      
-  }
-  
-  .contact-info ul li a {
-      font-size: 18px;
-      line-height: 3;  
-      font-weight: bold;
-  }
-
-  figcaption{
-      margin-left: 5px;
-      margin-top: -45%;
-      font-size: 5px;
-  }
-
-}
