@@ -78,8 +78,8 @@ section {
 /*Section styles*/
 .about {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: 20px 50px;  
   width: 90%;
   align-items: center;
@@ -87,8 +87,11 @@ section {
 
 .title-sidebox {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
+  border-right: 3px solid #39a6b2;
+  width: 25%;
+  height: 130px;
+  align-items: center;
 }
 
 .section-title {
@@ -104,13 +107,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.border1 {
-  border-right: 3px solid #39a6b2;
-  height: 200px;
-  flex: 1.5%;
-  align-items: center;
+  width: 75%;
 }
 
 .box-text {
@@ -127,47 +124,26 @@ section {
   padding-top: 25px;
 }
 
-.border2 {
-  border-right: 3px solid #39a6b2;
-  height: 300px;
-  flex: 2 4%;  
-  align-items: center;
-  
-}
-
 .container {
-  flex:80;
-}
-
-.container {
+  flex-wrap: wrap;
   display: flex;  
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center; 
-  margin-left: 15px;
-  width: 80%;  
-    
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
-  margin-left: 30px;  
-  align-items: baseline;
-  
+  display: flex;
+  margin-left: 20px;  
+  align-items: center;
 }
 
-.gallery__img {
+.gallery__item {
 width: 100%;
 height: 100%;
 object-fit: cover;
-border: solid 1px var(--primary-color);  
-}
-
-.gallery__item--1 {
-grid-column-start: 1;
-grid-row-start: 2;
-position: relative;
+border: solid 1px var(--primary-color); 
+position: relative; 
+flex-wrap: wrap;
 }
 
 .thumbnail { 
@@ -191,8 +167,8 @@ transform: scale(1.5);
 
 figcaption{
 position: absolute;
-margin-left: 5px;
-margin-top: -10%;
+left: 5px;
+bottom: 10%;
 font-size: 12px;
 font-style: italic;
 font-weight: bold;
@@ -203,13 +179,6 @@ background-color: rgb(229, 232, 238);
 
 
 /*Contact info section style*/
-.border3 {
-  border-right: 3px solid #39a6b2;
-  height: 100px;
-  flex: 2 2;
-  align-items: center;
-}
-
 .contact-info {
 position: relative;  
 flex: 150;
@@ -234,3 +203,9 @@ flex: 150;
   }
   
 /*Code for media query*/
+@media screen and (max-width:768px){
+  .about {
+    flex-direction: column;
+  }
+  
+}
