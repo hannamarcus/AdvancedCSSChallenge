@@ -8,7 +8,7 @@
   height: 400px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("./Images/pexels-iqx-azmi-3119775.jpg");
+  background-image: url("https://images.pexels.com/photos/3119775/pexels-photo-3119775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center;
 }
@@ -69,7 +69,7 @@ section {
   height: 150px;
   width: 150px;
   margin: 20px 50px;
-  background-image: url("./Images/Headshot.jpeg");
+  background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQFLvRqB1L4dvA/profile-displayphoto-shrink_800_800/0/1653599712930?e=1661990400&v=beta&t=NJzc4fydKOjzFe0nRLhBDn5rZaSXrE7IwTOY1kUUr2Y");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
