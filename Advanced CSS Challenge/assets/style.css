@@ -108,12 +108,15 @@ section {
   flex: 2 20%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 75%;
+  height: 30%;
 }
 
 .box-text {
   flex: 25;
+  width: 75%;
+  height: 30%;
 }
 
 .box-text p {
@@ -122,7 +125,8 @@ section {
   text-align: left;
   line-height: 1.5;
   margin-left: 200px;
-  width: 100%;
+  width: 500%;
+  height: 30%;
   padding-top: 25px;
 }
 
@@ -210,21 +214,13 @@ figcaption {
     flex-direction: column;
   }
 
-header nav ul {
+.header nav ul {
   flex-direction: column;
  line-height: 200%;
 }
 
-header {
-  padding: 20px 35px;
-  background-color: #0a2527;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-.background_picture {
-  width: 100%;
+.header {
+  flex-direction: column;
 }
 
 .title-sidebox {
@@ -236,6 +232,36 @@ header {
 .section-title {
   margin: 0 0 0 0px;
   width: 100%;
+  flex-direction: column;
+}
+
+.headshot {
+  height: 75px;
+  width: 75px;
+  margin: 0px 0px;
+  padding: 0%;
+}
+
+.box-info {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0%;
+}
+
+.box-text {
+flex-direction: column;
+flex-wrap: wrap;
+height: 150px;
+padding-bottom: 250%;
+padding-left: 0%;
+align-items: flex-start;
+}
+
+.box-text p {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 150%;
 }
 
 .container {
